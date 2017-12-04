@@ -1,0 +1,32 @@
+{
+  "name": "babel-preset-next",
+  "version": "1.0.0",
+  "description": "babel preset used by myself",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuining/babel-preset-next.git"
+  },
+  "author": "cuining",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuining/babel-preset-next/issues"
+  },
+  "homepage": "https://github.com/cuining/babel-preset-next#readme",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/plugin-proposal-async-generator-functions": "^7.0.0-beta.34",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.34",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.34",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.34",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.34",
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "@babel/preset-react": "^7.0.0-beta.34"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-beta.34",
+    "@babel/runtime": "^7.0.0-beta.34"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.34"
+  }
+}
