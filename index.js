@@ -3,11 +3,11 @@ module.exports = (context, opts = {}) => ({
     [
       require.resolve('@babel/preset-env'),
       {
-        targets: opts.targets || { browsers: ['last 2 versions'] },
+        targets: opts.targets || { ie: 9 },
         debug: opts.debug,
         modules: false,
-        useBuiltIns: opts.useBuiltIns || 'usage',
-        shippedProposals: opts.shippedProposals || true,
+        useBuiltIns: 'usage',
+        shippedProposals: true,
       }
     ],
     require.resolve('@babel/preset-react')
