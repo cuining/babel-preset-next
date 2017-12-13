@@ -3,11 +3,11 @@ module.exports = (context, opts = {}) => ({
     [
       require.resolve('@babel/preset-env'),
       {
-        targets: opts.targets || {},
+        targets: opts.targets || { browsers: ['last 2 versions'] },
         debug: opts.debug,
         modules: false,
         useBuiltIns: opts.useBuiltIns || 'usage',
-        shippedProposals: true
+        shippedProposals: opts.shippedProposals || true,
       }
     ],
     require.resolve('@babel/preset-react')
@@ -18,11 +18,8 @@ module.exports = (context, opts = {}) => ({
     require.resolve('@babel/plugin-proposal-decorators'),
     [
       require.resolve('@babel/plugin-proposal-class-properties'),
-      opts['@babel/plugin-proposal-class-properties'] || { loose: true }
+      { loose: true }
     ],
-    [
-      require.resolve('@babel/plugin-transform-runtime'),
-      opts['@babel/plugin-transform-runtime'] || {}
-    ]
+    require.resolve('@babel/plugin-transform-runtime')
   ]
 })
