@@ -6,8 +6,8 @@ module.exports = (context, opts = {}) => ({
         targets: opts.targets || { ie: 9 },
         debug: opts.debug,
         modules: false,
-        useBuiltIns: 'usage',
-        shippedProposals: true,
+        useBuiltIns: opts.useBuiltIns || false,
+        shippedProposals: true
       }
     ],
     require.resolve('@babel/preset-react')
@@ -20,6 +20,13 @@ module.exports = (context, opts = {}) => ({
       require.resolve('@babel/plugin-proposal-class-properties'),
       { loose: true }
     ],
-    require.resolve('@babel/plugin-transform-runtime')
+    [
+      require.resolve('@babel/plugin-transform-runtime'),
+      {
+        helpers: false,
+        polyfill: false,
+        regenerator: true
+      }
+    ]
   ]
 })

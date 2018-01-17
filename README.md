@@ -13,10 +13,9 @@ This package includes the Babel preset
 > * @babel/core
 > * [uglifyjs-webpack-plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)
 >   v1.0.0 or [babel-minify](https://github.com/babel/minify) (options)
-
 >   the default target
 >   browser is ie 9, if you want to use high level browser like chrome 50, you
->   should upgrade your webpack to v4.0.0 or user >the latest
+>   should upgrade your webpack to v4.0.0 or use the latest
 >   uglifyjs-webpack-plugin version to replace webpack.optimize.UglifyJsPlugin
 
 ## Usage
