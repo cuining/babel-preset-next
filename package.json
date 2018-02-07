@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-next",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "babel preset used by myself",
   "repository": {
     "type": "git",
@@ -14,12 +14,12 @@
   "homepage": "https://github.com/cuining/babel-preset-next#readme",
   "main": "index.js",
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.34",
-    "@babel/plugin-proposal-decorators": "^7.0.0-beta.34",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.34",
-    "@babel/plugin-transform-runtime": "^7.0.0-beta.34",
-    "@babel/preset-env": "^7.0.0-beta.34",
-    "@babel/preset-react": "^7.0.0-beta.34",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.39",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.39",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.39",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "@babel/preset-react": "^7.0.0-beta.39",
     "babel-plugin-react-require": "^3.0.0"
   }
 }
