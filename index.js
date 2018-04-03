@@ -5,7 +5,7 @@ module.exports = (context, opts = {}) => ({
       {
         targets: opts.targets || { ie: 9 },
         debug: opts.debug,
-        modules: false,
+        modules: opts.modules || false,
         useBuiltIns: opts.useBuiltIns || false,
         shippedProposals: true
       }
@@ -16,10 +16,7 @@ module.exports = (context, opts = {}) => ({
     require.resolve('babel-plugin-react-require'),
     require.resolve('@babel/plugin-syntax-dynamic-import'),
     require.resolve('@babel/plugin-proposal-decorators'),
-    [
-      require.resolve('@babel/plugin-proposal-class-properties'),
-      { loose: true }
-    ],
+    [require.resolve('@babel/plugin-proposal-class-properties'), { loose: true }],
     [
       require.resolve('@babel/plugin-transform-runtime'),
       {
