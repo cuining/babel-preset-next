@@ -15,7 +15,7 @@ module.exports = (context, opts = {}) => ({
   plugins: [
     require.resolve('babel-plugin-react-require'),
     require.resolve('@babel/plugin-syntax-dynamic-import'),
-    require.resolve('@babel/plugin-proposal-decorators'),
+    [require.resolve('@babel/plugin-proposal-decorators'), { legacy: true }],
     [require.resolve('@babel/plugin-proposal-class-properties'), { loose: true }],
     [
       require.resolve('@babel/plugin-transform-runtime'),
