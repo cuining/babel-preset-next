@@ -20,9 +20,7 @@ module.exports = (context, opts = {}) => ({
     [
       require.resolve('@babel/plugin-transform-runtime'),
       {
-        helpers: false,
-        polyfill: false,
-        regenerator: true
+        helpers: false
       }
     ]
   ]
